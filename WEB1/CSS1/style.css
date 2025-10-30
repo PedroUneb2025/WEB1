@@ -1,0 +1,69 @@
+/* Estilos externos */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+
+.background-section {
+    background-color: #f0f8ff;
+    background-image: url('caneta e caderno.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 20px;
+    border: 2px solid #00008b;
+    margin-bottom: 25px;
+}
+
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.special-list-item {
+    color: darkred;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-bottom: 25px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #add8e6;
+}
+
+.custom-link {
+    color: darkblue;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.custom-link:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.block {
+    display: block;
+}
