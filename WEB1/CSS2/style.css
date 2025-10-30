@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('https://source.unsplash.com/1920x600/?cinema-banner');
+    background-position: center;
+    padding: 2em;
+    text-align: center;
+    height: 50vh;
+}
+
+header h1 {
+    color: rgb(255, 0, 0);
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+header h2 {
+    font-style: italic;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+nav {
+    background-color: #333;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(255, 0, 0);
+}
+
+#destaque {
+    padding: 2em;
+    text-align: center;
+}
+
+.card-destaque {
+    background-color: #222;
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 1.5em;
+    margin: 1em auto;
+    max-width: 600px;
+    display: inline-block;
+}
+
+.card-destaque img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.card-destaque ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-top: 1em;
+}
+
+
+#catalogo {
+    padding: 2em;
+}
+
+.grade-filmes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-filme {
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em;
+    width: 250px;
+    text-align: center;
+}
+
+.card-filme img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card-filme a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+.card-filme a:hover {
+    text-decoration: underline;
+}
+
+
+#tabela {
+    padding: 2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+th, td {
+    padding: 0.75em;
+    text-align: left;
+    border: 1px solid #444;
+}
+
+th {
+    background-color: #444; 
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #222; 
+}
+
+/* Lista de Gêneros */
+#generos {
+    padding: 2em;
+}
+
+#generos ul {
+    list-style-type: square;
+    padding-left: 2em;
+}
+
+
+#sobre {
+    padding: 2em;
+}
+
+#sobre img {
+    float: right;
+    margin-left: 1em;
+    border-radius: 5px;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    background-color: #444;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-link:hover, .social-link:focus {
+    background-color: rgb(255, 0, 0);
+}
