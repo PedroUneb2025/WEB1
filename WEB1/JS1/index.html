@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adivinhe a palavra</title>
+  <link rel="stylesheet" href="estilo.css"/>
+</head>
+<body>
+  <header>
+    <h1>Adivinhe a palavra</h1>
+  </header>
+
+  <section>
+    <div id="hud">
+      <span id="categoria">Categoria: Frutas</span>
+      <span id="pontos">Pontos: 0</span>
+      <span id="vidas">Vidas: 6</span>
+    </div>
+
+    <div id="box-imagem">
+      <img src="assets/menino1.png" id="img-menino" alt="Boneco do jogo"/>
+    </div>
+
+    <div id="box-iniciar">
+      <button id="btn_iniciar" class="btn-iniciar" aria-label="Iniciar jogo">
+        <img src="assets/botao_iniciar.png" alt="Iniciar"/>
+      </button>
+    </div>
+
+    <div id="box-palavra" aria-live="polite" aria-atomic="true">
+      <p id="palavra"></p>
+    </div>
+
+    <div id="box-teclado" role="group" aria-label="Teclado de letras"></div>
+
+    <!--  HISTÓRICO DE PALPITES -->
+    <div id="box-historico" aria-live="polite" aria-atomic="false">
+      <h3>Palpites</h3>
+      <ul id="lista-historico"></ul>
+    </div>
+  </section>
+
+  <!-- Rodapé removido -->
+
+  <!-- Modal -->
+  <dialog id="modal">
+    <h2 id="modal-title"></h2>
+    <p id="modal-msg"></p>
+    <div class="modal-actions">
+      <button id="btn_continuar" class="btn primario">Continuar</button>
+      <button id="btn_reiniciar" class="btn">Reiniciar</button>
+    </div>
+  </dialog>
+
+  <script src="interacao.js"></script>
+</body>
+</html>

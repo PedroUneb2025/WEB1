@@ -1,0 +1,142 @@
+/* Base */
+:root{
+  --bg: #f6f0df;
+  --panel: #e1c8a1;
+  --panel-2: #f6ebd8;
+  --primary: #cfa97e;
+  --primary-700: #b88a5b;
+  --muted: #d6c4aa;
+  --text: #2b1e12;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; background: var(--bg); color: var(--text); }
+h1 { text-align: center; margin: 16px 0 8px; }
+
+/* Painel */
+section{
+  background: var(--panel);
+  width: min(560px, 96vw);
+  padding: 12px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.08);
+}
+
+/* HUD */
+#hud{
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 8px;
+  align-items: center;
+  background: var(--panel-2);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#hud span { white-space: nowrap; }
+
+/* Imagem */
+#box-imagem{
+  border-radius: 10px;
+  height: clamp(140px, 28vh, 220px);
+  width: 100%;
+  margin: 10px auto 6px;
+  display: flex; justify-content: center; align-items: center;
+  background: #fff8;
+}
+#img-menino{ height: 100%; width: auto; transition: transform .3s ease; }
+
+/* Botão iniciar */
+#box-iniciar{
+  display:flex; justify-content:center; align-items:center;
+  margin: 8px 0 6px;
+  height: 50px;
+}
+.btn-iniciar{
+  background: transparent; border: 0; padding: 0; cursor: pointer;
+}
+.btn-iniciar img{ height: 48px; width: auto; display:block; }
+
+/* Palavra */
+#box-palavra{
+  background: var(--panel-2);
+  border-radius: 10px;
+  min-height: 54px;
+  display:flex; justify-content:center; align-items:center;
+  margin: 8px 0;
+}
+#palavra{
+  font-weight: 800; letter-spacing: .3rem;
+  font-size: clamp(22px, 3.5vw, 30px);
+}
+
+/* Teclado */
+#box-teclado{
+  background: var(--panel-2);
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0,1fr));
+  gap: 6px;
+}
+.tecla{
+  background: var(--primary);
+  color: white; font-weight: 700; font-size: 16px;
+  border: none; border-radius: 8px;
+  padding: 10px 0;
+  transition: background-color .2s ease, transform .05s ease;
+  cursor: pointer;
+}
+.tecla:hover{ background: var(--primary-700); transform: scale(1.03); }
+.tecla:disabled{ background: var(--muted); color:#fff; cursor:not-allowed; transform:none; }
+
+/* Modal */
+dialog#modal{
+  border: none; border-radius: 12px; padding: 16px 18px;
+  max-width: min(440px, 90vw);
+}
+#modal h2{ margin: 0 0 6px; }
+#modal p { margin: 0 0 12px; }
+.modal-actions{ display:flex; gap: 8px; justify-content:flex-end; }
+.btn{
+  background: #eee; border: 0; border-radius: 8px; padding: 10px 14px; cursor: pointer; font-weight: 700;
+}
+.btn.primario{ background: var(--primary); color: #fff; }
+.btn:focus{ outline: 2px solid #0004; outline-offset: 2px; }
+
+/* Rodapé */
+#txtRodape{ text-align: center; }
+
+/* --- Histórico de palpites --- */
+#box-historico{
+  background: var(--panel-2, #f6ebd8);
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px 12px;
+}
+#box-historico h3{
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+#lista-historico{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+#lista-historico li{
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+}
+#lista-historico li.hit{
+  background: #b7e3b1; /* acerto */
+}
+#lista-historico li.miss{
+  background: #f1b0b7; /* erro */
+}
