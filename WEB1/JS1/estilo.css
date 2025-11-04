@@ -1,0 +1,115 @@
+body {
+    background-color: beige;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    background-color: rgb(221, 193, 150);
+    width: 420px;
+    height: 400px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+div#box-imagem {
+    //background-color: antiquewhite;
+    border-radius: 10px;
+    height: 150px;
+    width: 400px;
+    margin: 10px auto;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+div#box-iniciar{
+    height: 40px;
+    text-align: center;
+    margin: 10px auto;  
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div#box-palavra {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    height: 50px;
+    width: 400px;
+    margin: 10px auto;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#box-teclado {
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 10px;
+    height: auto;
+    min-height: 100px;
+    width: 400px;
+
+    margin: auto;
+
+    gap: 1px; /*espaço entre os botões*/
+    display: flex;
+    flex-wrap: wrap; /* permite quebrar linha automaticamente */
+    justify-content: center;
+    align-items: center;
+}
+.tecla {
+    background-color: #cfa97e;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;        /* 🔹 Aumenta o tamanho da letra */
+    border: none;
+    border-radius: 8px;     /* 🔹 Deixa mais arredondado */
+    padding: 10px 14px;     /* 🔹 Aumenta o tamanho do botão */
+    margin: 6px;            /* 🔹 Mais espaçamento entre botões */
+    min-height: 100px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.tecla:hover {
+    background-color: #b88a5b;
+    transform: scale(1.05);
+}
+
+.tecla:disabled {
+    background-color: #d6c4aa;
+    color: #fff;
+    cursor: not-allowed;
+    transform: none;
+}
+
+img#img-menino {
+    height: 100%;
+    width: auto;
+    transition: 0.3s ease;
+}
+img#btn_iniciar {
+    height: 100%;
+    width: auto;
+    transition: 0.3s ease;
+    cursor: pointer;
+    
+}
+
+p#palavra {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p#txtRodape {
+    text-align: center;
+}
+
